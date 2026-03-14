@@ -60,6 +60,9 @@ ENV/
 env.bak/
 venv.bak/
 
+# ⚠️ SECURITY: Never commit API keys or secrets!
+# .env files are ignored by default to protect sensitive credentials
+
 # IDE
 .idea/
 .vscode/
