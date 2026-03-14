@@ -9,11 +9,8 @@ class Settings(BaseSettings):
     dashscope_api_key: str = ""
     openai_api_key: str = ""
     
-    # Search API
-    brave_api_key: str = ""
-    
     # Configuration
-    default_llm_model: str = "qwen-plus"
+    default_llm_model: str = "qwen3.5-plus"
     verbose: bool = True
     
     # Server
@@ -40,10 +37,6 @@ class Settings(BaseSettings):
 @lru_cache()
 def get_settings() -> Settings:
     return Settings()
-
-
-settings = get_settings()
- return Settings()
 
 
 settings = get_settings()
