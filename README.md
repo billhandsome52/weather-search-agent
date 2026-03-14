@@ -54,7 +54,7 @@ cp .env.example .env
 
 # 编辑 .env 文件，填入你的 API Key
 # - 百炼 API Key: https://dashscope.console.aliyun.com/
-# - Brave API Key: https://brave.com/search/api/
+# 搜索使用 DuckDuckGo，无需 API Key
 ```
 
 ### 4. 运行
@@ -145,3 +145,4 @@ xuyun
 ---
 
 **Happy Coding! 🚀**
+ding! 🚀**

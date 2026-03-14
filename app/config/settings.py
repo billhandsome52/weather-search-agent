@@ -25,10 +25,6 @@ class Settings(BaseSettings):
         return bool(self.dashscope_api_key or self.openai_api_key)
     
     @property
-    def has_search_key(self) -> bool:
-        return bool(self.brave_api_key)
-    
-    @property
     def llm_provider(self) -> str:
         if self.dashscope_api_key:
             return "dashscope"
@@ -44,6 +40,10 @@ class Settings(BaseSettings):
 @lru_cache()
 def get_settings() -> Settings:
     return Settings()
+
+
+settings = get_settings()
+ return Settings()
 
 
 settings = get_settings()
